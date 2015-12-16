@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EF811E91B7144CB00E36365 /* Modal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF811E81B7144CB00E36365 /* Modal.m */; };
 		C988B45F180D799500ECFD6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C988B45E180D799500ECFD6F /* Foundation.framework */; };
 		C988B461180D799500ECFD6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C988B460180D799500ECFD6F /* CoreGraphics.framework */; };
 		C988B463180D799500ECFD6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C988B462180D799500ECFD6F /* UIKit.framework */; };
@@ -21,6 +22,8 @@
 		C988B480180D799500ECFD6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C988B462180D799500ECFD6F /* UIKit.framework */; };
 		C988B488180D799500ECFD6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C988B486180D799500ECFD6F /* InfoPlist.strings */; };
 		C988B48A180D799500ECFD6F /* MKDirectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C988B489180D799500ECFD6F /* MKDirectionsTests.m */; };
+		C988B494180D799F00ECFD6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C988B493180D799F00ECFD6F /* MapKit.framework */; };
+		C988B496180D79A400ECFD6F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C988B495180D79A400ECFD6F /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7EF811E71B7144CB00E36365 /* Modal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Modal.h; sourceTree = "<group>"; };
+		7EF811E81B7144CB00E36365 /* Modal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Modal.m; sourceTree = "<group>"; };
 		C988B45B180D799500ECFD6F /* MKDirections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKDirections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C988B45E180D799500ECFD6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C988B460180D799500ECFD6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,8 @@
 		C988B485180D799500ECFD6F /* MKDirectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKDirectionsTests-Info.plist"; sourceTree = "<group>"; };
 		C988B487180D799500ECFD6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C988B489180D799500ECFD6F /* MKDirectionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDirectionsTests.m; sourceTree = "<group>"; };
+		C988B493180D799F00ECFD6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C988B495180D79A400ECFD6F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C988B496180D79A400ECFD6F /* CoreLocation.framework in Frameworks */,
+				C988B494180D799F00ECFD6F /* MapKit.framework in Frameworks */,
 				C988B461180D799500ECFD6F /* CoreGraphics.framework in Frameworks */,
 				C988B463180D799500ECFD6F /* UIKit.framework in Frameworks */,
 				C988B45F180D799500ECFD6F /* Foundation.framework in Frameworks */,
@@ -101,6 +110,8 @@
 		C988B45D180D799500ECFD6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C988B495180D79A400ECFD6F /* CoreLocation.framework */,
+				C988B493180D799F00ECFD6F /* MapKit.framework */,
 				C988B45E180D799500ECFD6F /* Foundation.framework */,
 				C988B460180D799500ECFD6F /* CoreGraphics.framework */,
 				C988B462180D799500ECFD6F /* UIKit.framework */,
@@ -119,6 +130,8 @@
 				C988B474180D799500ECFD6F /* ViewController.m */,
 				C988B476180D799500ECFD6F /* Images.xcassets */,
 				C988B465180D799500ECFD6F /* Supporting Files */,
+				7EF811E71B7144CB00E36365 /* Modal.h */,
+				7EF811E81B7144CB00E36365 /* Modal.m */,
 			);
 			path = MKDirections;
 			sourceTree = "<group>";
@@ -252,6 +265,7 @@
 				C988B475180D799500ECFD6F /* ViewController.m in Sources */,
 				C988B46F180D799500ECFD6F /* AppDelegate.m in Sources */,
 				C988B46B180D799500ECFD6F /* main.m in Sources */,
+				7EF811E91B7144CB00E36365 /* Modal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +474,7 @@
 				C988B48F180D799500ECFD6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C988B490180D799500ECFD6F /* Build configuration list for PBXNativeTarget "MKDirectionsTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +483,7 @@
 				C988B492180D799500ECFD6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
